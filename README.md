@@ -74,33 +74,33 @@ composer install
 ```
 ## Endpoints da API
 ### 1. Criar Usuário
-* Rota: /users
+* Rota: api/users
 * Método: POST
 * Descrição: Cria um novo usuário.
 ### 2. Login
-* Rota: /login
+* Rota: api/login
 * Método: POST
 * Descrição: Realiza o login e retorna um token Bearer.
 * Parâmetros:
     * email: Email do usuário.
     * password: Senha do usuário.
 ### 3. CRUD de Clientes
-* Rota: /customers
+* Rota: api/customers
 * Métodos: GET, POST, PATCH, DELETE
 * Descrição: Endpoints para criação, leitura, atualização e exclusão de clientes.
 * Observação: Necessita estar logado.
 ### 4. Listar Cidades
-* Rota: /cities
+* Rota: api/cities
 * Método: GET
 * Descrição: Lista todas as cidades.
 * Observação: Necessita estar logado.
 ### 5. Listar Estados
-* Rota: /states
+* Rota: api/states
 * Método: GET
 * Descrição: Lista todos os estados.
 * Observação: Necessita estar logado.
 ### 6. Logout
-* Rota: /logout
+* Rota: api/logout
 * Método: GET
 * Descrição: Realiza o logout do usuário.
 * Observação: Necessita estar logado.
