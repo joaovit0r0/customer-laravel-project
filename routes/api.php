@@ -15,5 +15,7 @@ Route::middleware(['auth:sanctum'])->group(function() {
     Route::patch('/customers/{id}', [CustomerController::class, 'update']);
     Route::delete('/customers/{id}', [CustomerController::class, 'destroy']);
     Route::post('/customers/{param}', [CustomerController::class, 'search']);
+
+    Route::get('/logout', [AuthController::class, 'logout']);
 });
 
