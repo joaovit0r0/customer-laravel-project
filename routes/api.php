@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CityController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\StateController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,6 +17,9 @@ Route::middleware(['auth:sanctum'])->group(function() {
     Route::patch('/customers/{id}', [CustomerController::class, 'update']);
     Route::delete('/customers/{id}', [CustomerController::class, 'destroy']);
     Route::post('/customers/{param}', [CustomerController::class, 'search']);
+
+    Route::get('/cities', [CityController::class, 'index']);
+    Route::get('/states', [StateController::class, 'index']);
 
     Route::get('/logout', [AuthController::class, 'logout']);
 });
